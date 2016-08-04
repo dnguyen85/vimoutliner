@@ -439,11 +439,11 @@ def handleTable(linein, lineLevel):
 # input: line
 # output: modified line
 def linkOrImage(line):
-    line = re.sub('\[(\S+?)\]', '<img src="\\1" alt="\\1">', line)
-    line = re.sub('\[(\S+)\s(.*?)\]', '<a href="\\1">\\2</a>', line)
-    line = re.sub('(<a href=")\+(.*)"\>', '\\1\\2" target=_new>', line)
-    line = line.replace('<img src="X" alt="X">', '[X]')
-    line = line.replace('<img src="_" alt="_">', '[_]')
+    # line = re.sub('\[(\S+?)\]', '<img src="\\1" alt="\\1">', line)
+    # line = re.sub('\[(\S+)\s(.*?)\]', '<a href="\\1">\\2</a>', line)
+    # line = re.sub('(<a href=")\+(.*)"\>', '\\1\\2" target=_new>', line)
+    # line = line.replace('<img src="X" alt="X">', '[X]')
+    # line = line.replace('<img src="_" alt="_">', '[_]')
     return line
 
 
